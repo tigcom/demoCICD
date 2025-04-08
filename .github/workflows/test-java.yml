@@ -21,6 +21,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build and test on Windows
-        run: mvn clean verify
-
+      - name: Build and run tests
+        run: mvn clean install || (echo "Build or tests failed!" && exit 1) 
