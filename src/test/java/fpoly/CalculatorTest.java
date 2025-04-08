@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 
-public class CalculatorTestNG {
+public class CalculatorTest {
     Calculator calculator;
 
     @BeforeClass
