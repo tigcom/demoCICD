@@ -23,6 +23,6 @@ public class CalculatorTestNG {
     @Test
     public void testsubtract() {
         System.out.println("Test phép trừ");
-        assertEquals(calculator.subtract(6, 3), 3);
+        assertEquals(calculator.subtract(5, 3), 2);
     }
 }
