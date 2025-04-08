@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Lab4.TestVatCalculator">
+      <class name="fpoly.CalculatorTestNG">
         <methods>
-          <include name="testVatCalculation"/>
+          <include name="setupBeforeAll"/>
+          <include name="testsubtract"/>
+          <include name="testAdd"/>
         </methods>
-      </class> <!-- Lab4.TestVatCalculator -->
+      </class> <!-- fpoly.CalculatorTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
