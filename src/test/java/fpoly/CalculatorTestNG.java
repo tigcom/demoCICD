@@ -21,8 +21,8 @@ public class CalculatorTestNG {
     }
 
     @Test
-    public void testDivide() {
-        System.out.println("Test phép chia");
-        assertEquals(calculator.divide(6, 3), 2);
+    public void testsubtract() {
+        System.out.println("Test phép trừ");
+        assertEquals(calculator.subtract(5, 3), 2);
     }
 }
