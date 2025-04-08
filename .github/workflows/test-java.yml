@@ -7,19 +7,19 @@ on:
     branches: [master]
 
 jobs:
-  build:
+  windows-jobs:  # KHÔNG được dùng tab
     name: Run Tests on Windows
-    runs-on: windows-latest
+    runs-on: windows-latest  # sửa "windowns-lastest" thành đúng
 
     steps:
-      - name: Checkout source code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build and run tests
-        run: mvn clean install || (echo "Build or tests failed!" && exit 1) 
+      - name: Run Tests on Windows
+        run: mvn clean verify
